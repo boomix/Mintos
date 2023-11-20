@@ -153,7 +153,7 @@ class TransfersController extends Controller
             ->limit($limit)
             ->get();
 
-        return response()->json(($transactions));
+        return $this->sendResponse(json_decode($transactions));
     }
 
     /**
