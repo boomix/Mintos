@@ -6,6 +6,17 @@ Built with Laravel 10
 
 * PHP 8.1
 * php-curl
+* composer
+
+## Installation
+
+* `git clone https://github.com/boomix/Mintos.git .`
+* `composer install`
+* Rename .env.example to .env and change DB connection access
+* `php artisan migrate` (creates tables)
+* `php artisan currencies:update`
+* `php artisan db:seed --class=ClientsSeeder`
+* `php artisan serve`
 
 ## Commands
 
