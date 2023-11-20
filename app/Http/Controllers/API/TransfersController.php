@@ -39,7 +39,7 @@ class TransfersController extends Controller
             $account->currency = $account->currencyName();
         }
 
-        return $this->sendResponse(json_decode($accounts));
+        return $this->sendResponse($accounts->toArray());
     }
 
     /**
@@ -156,7 +156,7 @@ class TransfersController extends Controller
             ->limit($limit)
             ->get();
 
-        return $this->sendResponse(json_decode($transactions));
+        return $this->sendResponse($transactions->toArray());
     }
 
     /**

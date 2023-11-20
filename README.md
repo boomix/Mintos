@@ -16,6 +16,7 @@ Built with Laravel 10
 * `php artisan migrate` (creates tables)
 * `php artisan currencies:update`
 * `php artisan db:seed --class=ClientsSeeder`
+* `php artisan key:generate`
 * `php artisan serve`
 
 ## Commands
