@@ -2,6 +2,16 @@
 
 Built with Laravel 10
 
+## Requirements
+
+* PHP 8.1
+* php-curl
+
+## Commands
+
+* `php artisan currencies:update` (updates latest currencies)
+* `php artisan db:seed --class=ClientsSeeder` (adds random clients with 0-3 accounts)
+
 ## REST API docs
 
 ---
