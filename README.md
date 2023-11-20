@@ -5,6 +5,7 @@ Built with Laravel 10
 ## Requirements
 
 * PHP 8.1 - 8.2
+```sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-dom```
 * PHP-CURL
 * Composer
 
