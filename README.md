@@ -22,7 +22,7 @@ Built with Laravel 10
 ## Commands
 
 * `php artisan currencies:update` (updates latest currencies)
-* `php artisan db:seed --class=ClientsSeeder` (adds random clients with 0-3 accounts)
+* `php artisan db:seed --class=ClientsSeeder` (adds 10 random clients with 0-3 accounts)
 
 ## REST API docs
 
