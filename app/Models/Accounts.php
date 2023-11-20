@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -15,8 +17,12 @@ class Accounts extends Model
 
     protected $hidden = ['currency_id', 'created_at', 'updated_at'];
 
-
-    public function currencyName()
+    /**
+     * Get account currency name
+     *
+     * @return string
+     */
+    public function currencyName(): string
     {
         return $this->hasOne(Currencies::class, 'id', 'currency_id')->first()->currency;
     }

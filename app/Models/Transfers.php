@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -7,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 class Transfers extends Model
 {
     public $timestamps = false;
-
 
     /**
      * The attributes that are mass assignable.
