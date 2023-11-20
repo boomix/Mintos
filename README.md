@@ -4,9 +4,9 @@ Built with Laravel 10
 
 ## Requirements
 
-* PHP 8.1
-* php-curl
-* composer
+* PHP 8.1 - 8.2
+* PHP-CURL
+* Composer
 
 ## Installation
 

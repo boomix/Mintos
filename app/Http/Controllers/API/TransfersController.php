@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
@@ -128,6 +130,7 @@ class TransfersController extends Controller
     /**
      * Show all transactions
      *
+     * @param Request $request
      * @return JsonResponse
      */
     public function transactions(Request $request): JsonResponse
@@ -160,9 +163,9 @@ class TransfersController extends Controller
      * Success response
      *
      * @param array $result
-     * @return void
+     * @return JsonResponse
      */
-    private function sendResponse(array $result)
+    private function sendResponse(array $result): JsonResponse
     {
         $response = [
             'success' => true,
@@ -171,7 +174,6 @@ class TransfersController extends Controller
 
         return response()->json($response, 200);
     }
-
 
     /**
      * Return error response
